@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent {
+            width: 200px;
+            height: 200px;
+            border: 1px solid;
+        }
+
+        .child {
+            width: 100px;
+            height: 100px;
+            border: 1px solid;
+        }
+
+        /* 1 */
+        /* .parent {
+            position: relative;
+        }
+
+        .child {
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+        } */
+
+        /* 2 */
+        /* .parent {
+            position: relative;
+        }
+
+        .child {
+            position: absolute;
+            top: calc(50% - 50px);
+            left: calc(50% - 50px);
+        } */
+
+        /* 3 */
+        /* .parent {
+            position: relative;
+        }
+
+        .child {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        } */
+
+        /* 4 */
+        /* .parent {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        } */
+
+        /* 5 */
+        /* .parent {
+            text-align: center;
+        }
+
+        .parent::after {
+            content: '';
+            display: inline-block;
+            height: 100%;
+            vertical-align: middle;
+        }
+
+        .child {
+            vertical-align: middle;
+            display: inline-block;
+        } */
+
+        /* 6 */
+        /* .parent {
+            text-align: center;
+        }
+
+        .brother {
+            display: inline-block;
+            height: 100%;
+            vertical-align: middle;
+        }
+
+        .child {
+            vertical-align: middle;
+            display: inline-block;
+        } */
+
+        /* 7 */
+        /* .parent {
+            display: grid;
+            justify-items: center;
+            align-items: center;
+        } */
+
+        /* .child {} */
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <!-- 兄弟节点参考元素 -->
+        <!-- <div class="brother"></div> -->
+        <div class="child"></div>
+    </div>
+</body>
+
+</html>
